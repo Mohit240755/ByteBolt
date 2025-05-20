@@ -29,6 +29,7 @@ const Login = () => {
             setMobile('');
             setMail('');
         } else {
+         
             const storedUser = JSON.parse(localStorage.getItem('user'));
             if (
                 storedUser &&
@@ -125,8 +126,7 @@ const Login = () => {
                         </p>
 
                         <p className="text-xs text-blue-400 text-center underline mt-2">
-                            Forgot passwordefkehfehig
-                            dlfjdkj?
+                            Forgot password?
                         </p>
                     </form>
                 </div>

@@ -6,10 +6,12 @@ import { FaShoppingBag } from "react-icons/fa";
 import { IoPersonCircleSharp } from "react-icons/io5";
 import { RiLogoutBoxFill } from "react-icons/ri";
 import Pic from "../image/logo.png"
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [open, setOpen] = useState(false);
+
 
     useEffect(() => {
         const loginUser = localStorage.getItem("loginuser");
@@ -20,8 +22,8 @@ const Navbar = () => {
 
     console.log("isLoggedIn:", isLoggedIn);
     console.log("open:", open);
-
-
+    const count = useSelector((state) => state.counter.value.length);
+    console.log("cartItems:", count);
     return (
         <>
             <div className="w-full">
@@ -59,7 +61,7 @@ const Navbar = () => {
                                     </div>)} </div>) : <Link to="/login" className="text-2xl hover:text-gray-400"> <IoPersonCircleSharp />  </Link>
                                     }
                             </div>
-                            <Link to={"/addcart"}><li className="text-2xl"><FaShoppingBag /></li></Link></div>
+                            <Link to={"/addcart"}><li className="text-2xl flex flex-wrap "><FaShoppingBag /><span className="text-sm">{count}</span></li></Link></div>
                     </ul>
                 </nav>
             </div>

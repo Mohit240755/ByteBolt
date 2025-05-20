@@ -1,8 +1,29 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {
-  value: [],
+const loadCartFromLocalStorage = () => {
+  try {
+    const serializedCart = localStorage.getItem('cart');
+    const parsed = JSON.parse(serializedCart);
+    if (Array.isArray(parsed)) {
+      return { value: parsed };
+    }
+    return { value: [] };
+  } catch (err) {
+    console.error("Error loading cart from local storage", err);
+    return { value: [] };
+  }
 };
+const saveCartToLocalStorage = (cart) => {
+  try {
+    const serializedCart = JSON.stringify(cart);
+    localStorage.setItem('cart', serializedCart);
+  } catch (err) {
+    console.error("Error saving cart to local storage", err);
+  }
+};
+
+
+const initialState = loadCartFromLocalStorage();
 
 export const counterSlice = createSlice({
   name: 'counter',
@@ -15,15 +36,18 @@ export const counterSlice = createSlice({
       } else {
         state.value.push(action.payload);
       }
+      saveCartToLocalStorage(state.value); 
     },
     decrement: (state, action) => {
       state.value = state.value.filter(item => item.id !== action.payload);
+      saveCartToLocalStorage(state.value); 
     },
     updateQuantity: (state, action) => {
       const { id, quantity } = action.payload;
       const item = state.value.find(item => item.id === id);
       if (item) {
         item.quantity = quantity;
+        saveCartToLocalStorage(state.value); 
       }
     }
   },
