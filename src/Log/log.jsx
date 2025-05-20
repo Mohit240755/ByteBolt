@@ -125,7 +125,8 @@ const Login = () => {
                         </p>
 
                         <p className="text-xs text-blue-400 text-center underline mt-2">
-                            Forgot password?
+                            Forgot passwordefkehfehig
+                            dlfjdkj?
                         </p>
                     </form>
                 </div>
