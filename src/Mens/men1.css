@@ -1,0 +1,7 @@
+.M {
+  transition: transform 0.3s ease;
+}
+
+.M:hover {
+  transform: scale(1.1);
+}

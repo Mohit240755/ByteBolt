@@ -1,0 +1,40 @@
+.aa{
+    text-shadow: 3px 2px 4px blue;
+}
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+  }
+  
+  .slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .slider-track img {
+    width: 100vw;
+    flex-shrink: 0;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
