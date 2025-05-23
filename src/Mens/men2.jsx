@@ -323,7 +323,7 @@ const Mensss = () => {
   return (
     <>
     <div className="p-6 bg-gray-100" >
-    <h1 className="text-center pt-3 text-5xl border bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 text-white h-20 font-bold font-serif">
+    <h1 className="text-center pt-3 text-5xl border bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white h-20 font-bold font-serif">
   Mens Trending Footwear
 </h1>
       <p className="p-6 font-sans text-[25px]">(Showing 1 – 40 products of 29,732 products)</p>
@@ -340,7 +340,7 @@ const Mensss = () => {
               </p>
             </div>
             <div className="flex justify-center gap-10 mt-5">
-              <Link to={`/men2/${product.id}`}><button className="border rounded-2xl h-10 w-60 bg-gradient-to-r from-cyan-400 via-sky-500 to-blue-600 hover:bg-gray-500 font-semibold">
+              <Link to={`/men2/${product.id}`}><button className="border rounded-2xl h-10 w-60  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white hover:bg-gray-500 font-semibold">
                 BUY
               </button></Link>
             </div>

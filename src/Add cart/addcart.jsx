@@ -1,5 +1,6 @@
   import { useDispatch, useSelector } from "react-redux";
   import { updateQuantity, decrement } from "../redux/slide";
+import Footer from "../Footer/footer";
 
   function AddCart() {
     const cartItems = useSelector((state) => state.counter.value);
@@ -111,6 +112,7 @@
           </div>
         </div>
       </div>
+      <Footer />
       </>
       }
       </>

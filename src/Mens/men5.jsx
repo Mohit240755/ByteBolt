@@ -66,7 +66,7 @@ export const nikeProducts = [
     return (
         <>
         <div className="p-6 bg-gray-100" >
-          <h1 className="text-center pt-3 border bg-gradient-to-r from-red-500 via-rose-500 to-pink-500 text-white h-20 text-5xl font-bold font-serif">Nike Product</h1>
+          <h1 className="text-center pt-3 border  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white h-20 text-5xl font-bold font-serif">Nike Product</h1>
           <p className="p-6 font-sans text-[25px]">(Showing 1 – 40 products of 29,732 products)</p>
     
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-6">
@@ -81,7 +81,7 @@ export const nikeProducts = [
                   </p>
                 </div>
                 <div className="flex justify-center gap-10 mt-5">
-                  <Link to={`/men5/${product.id}`}><button className="border rounded-2xl h-10 w-60 bg-gradient-to-r from-red-500 via-rose-500 to-pink-500 hover:bg-gray-500 font-semibold">
+                  <Link to={`/men5/${product.id}`}><button className="border rounded-2xl h-10 w-60  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white hover:bg-gray-500 font-semibold">
                     BUY
                   </button></Link>
                 </div>

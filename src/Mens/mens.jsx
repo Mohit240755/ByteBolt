@@ -114,43 +114,43 @@ const Mens=() => {
         <div className="flex justify-around p-5">
          <Link to="/men9">  <img src={M9} alt="no" /></Link> 
           <Link to="/men8a"> <img src={M10} alt="no" /></Link>
-            <a href=""><img src={M11} alt="no" /></a>
-            <a href=""><img src={M12} alt="no" /></a>
-            <a href=""><img src={M13} alt="no" /></a>
-            <a href=""><img src={M14} alt="no" /></a>
+            <Link to = "/men10"><img src={M11} alt="no" /></Link>
+            <Link to = "/men11"><img src={M12} alt="no" /></Link>
+            <Link to = "/men12"><img src={M13} alt="no" /></Link>
+            <Link to = "/men13"><img src={M14} alt="no" /></Link>
         </div>
 
         <div>
             <h1 className="text-3xl font-bold font-serif p-10">EXPLORE TOP BRANDS</h1>
         </div>
         <div className="flex justify-around p-5">
-            <a href=""><img src={M15} alt="no" /></a>
-            <a href=""><img src={M16} alt="no" /></a>
-            <a href=""><img src={M17} alt="no" /></a>
-            <a href=""><img src={M18} alt="no" /></a>
-            <a href=""><img src={M19} alt="no" /></a>
+            <Link to="/men14"><img src={M15} alt="no" /></Link>
+            <Link to="/men15"><img src={M16} alt="no" /></Link>
+            <Link to="/men16"><img src={M17} alt="no" /></Link>
+            <Link to="/men17"><img src={M18} alt="no" /></Link>
+            <Link to="/men18"><img src={M19} alt="no" /></Link>
         </div>
 
         <div>
             <h1 className="text-3xl font-bold font-serif p-10">TRANDING IN FOOTWEAR</h1>
         </div>
         <div className="flex justify-around p-5 gap-5">
-            <a href=""><img src={M20} alt="no" /></a>
-            <a href=""><img src={M21} alt="no" /></a>
-            <a href=""><img src={M22} alt="no" /></a>
-            <a href=""><img src={M23} alt="no" /></a>
-            <a href=""><img src={M24} alt="no" /></a>
+            <Link to="/men19"><img src={M20} alt="no" /></Link>
+            <Link to="/men20"><img src={M21} alt="no" /></Link>
+            <Link to="/men21"><img src={M22} alt="no" /></Link>
+            <Link to="/men22"><img src={M23} alt="no" /></Link>
+            <Link to="/men23"><img src={M24} alt="no" /></Link>
         </div>
 
         <div>
             <h1 className="text-3xl font-bold font-serif p-10">TRANDING IN ACCESSORIES</h1>
         </div>
         <div className="flex justify-around p-5 gap-5">
-            <a href=""><img src={M25} alt="no" /></a>
-            <a href=""><img src={M26} alt="no" /></a>
-            <a href=""><img src={M27} alt="no" /></a>
-            <a href=""><img src={M28} alt="no" /></a>
-            <a href=""><img src={M29} alt="no" /></a>
+            <Link to="/men24"><img src={M25} alt="no" /></Link>
+            <Link to="/men25"><img src={M26} alt="no" /></Link>
+            <Link to="/men26"><img src={M27} alt="no" /></Link>
+            <Link to="/men27"><img src={M28} alt="no" /></Link>
+            <Link to="/men28"><img src={M29} alt="no" /></Link>
         </div>
 <Footer/>
         </div>

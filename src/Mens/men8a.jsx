@@ -81,7 +81,7 @@ export const mensTshirts = [
                   </p>
                 </div>
                 <div className="flex justify-center gap-10 mt-5">
-                  <Link to={`/men8a/${product.id}`}><button className="border rounded-2xl h-10 w-60 text-white bg-gradient-to-r from-rose-300 via-amber-200 to-pink-400 hover:bg-blue-500 font-semibold">
+                  <Link to={`/men8a/${product.id}`}><button className="border rounded-2xl h-10 w-60 text-white  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500  hover:bg-blue-500 font-semibold">
                     BUY
                   </button></Link> 
                 </div>

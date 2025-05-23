@@ -31,6 +31,20 @@ import Mens8a from "./Mens/men8a";
 import ProtectRoute from "./Log/protect";
 import Meni8 from "./Mens/meni8";
 import AddCart from "./Add cart/addcart";
+import Mens10 from "./Mens/men10";
+import Meni10 from "./Mens/meni10";
+import Mens11 from "./Mens/men11";
+import Meni11 from "./Mens/meni11";
+import Mens12 from "./Mens/men12";
+import Meni12 from "./Mens/meni12";
+import Mens13 from "./Mens/men13";
+import Meni13 from "./Mens/meni13";
+import Mens24 from "./Mens/men24";
+import Meni24 from "./Mens/meni24";
+import Mens25 from "./Mens/men25";
+import Meni25 from "./Mens/meni25";
+import Mens26 from "./Mens/men26";
+import Meni26 from "./Mens/meni26";
 
 
 export const userContext = createContext()
@@ -68,7 +82,21 @@ const App= () => {
        <Route path="/men9/:id"  element={<Meni9/>}/>
        <Route path="/men8a"  element={<Mens8a/>}/>
        <Route path="/men8a/:id"  element={<Meni8/>}/>
- 
+       <Route path="/men10"  element={<Mens10/>}/>
+       <Route path="/men10/:id"  element={<Meni10/>}/>
+       <Route path="/men11"  element={<Mens11/>}/>
+       <Route path="/men11/:id"  element={<Meni11/>}/>
+       <Route path="/men12"  element={<Mens12/>}/>
+       <Route path="/men12/:id"  element={<Meni12/>}/>
+       <Route path="/men13"  element={<Mens13/>}/>
+       <Route path="/men13/:id"  element={<Meni13/>}/>
+       <Route path="/men24"  element={<Mens24/>}/>
+       <Route path="/men24/:id"  element={<Meni24/>}/>
+       <Route path="/men25"  element={<Mens25/>}/>
+       <Route path="/men25/:id"  element={<Meni25/>}/>
+       <Route path="/men26"  element={<Mens26/>}/>
+       <Route path="/men26/:id"  element={<Meni26/>}/>
+
        <Route path="/women" element={<Women/>}/>
        <Route path="/kids" element={<Kids/>}/>
        <Route path="/kitchen" element={<Kitchen/>}/>

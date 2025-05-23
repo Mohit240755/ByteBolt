@@ -4,17 +4,33 @@ import { FaShoppingBag, FaFacebook, FaTwitter, FaInstagramSquare, FaYoutube } fr
 import { useEffect, useState } from "react";
 import Footer from "../Footer/footer";
 import { ucbProducts } from "./men3";
+import { increment } from "../redux/slide";
+import { useDispatch } from "react-redux";
+import { toast,ToastContainer } from "react-toastify";
 
 
 const Meni2= () => {
-    
     const { id } = useParams();
+    const dispatch = useDispatch();
       const [selectSize, setSelectedSize] = useState("S");
       const [quantity,setQuantity] = useState(1);
       const sizes = ["S", "M", "L", "XL", "XXL"];
     const product = ucbProducts.find(p => p.id === Number(id));
 
     console.log("product",product);
+
+    const handleClick = () => {
+        dispatch(increment({
+          id: product.id,
+          name: product.name,
+          brand: product.brand,
+          price: product.price,
+          image: product.image,
+          quantity: Number(quantity),
+        }));
+        toast.success("Added to cart successfully!");
+      };
+    
     
     
     return (
@@ -80,7 +96,7 @@ const Meni2= () => {
                        <button className="border rounded-2xl mt-5 h-10 w-40 px-5 bg-emerald-200 hover:bg-emerald-500  transition-all text-sm">
                          Buy Now
                        </button>
-                       <button className="flex items-center gap-3 border mt-5 rounded-2xl px-10 h-10 w-50 bg-emerald-200 hover:bg-emerald-500 transition-all text-sm">
+                       <button onClick={handleClick} className="flex items-center gap-3 border mt-5 rounded-2xl px-10 h-10 w-50 bg-emerald-200 hover:bg-emerald-500 transition-all text-sm">
                          <FaShoppingBag /> Add to cart
                        </button>
                      </div>
@@ -88,8 +104,8 @@ const Meni2= () => {
                    </div>
                  </div>
                </div>
-       
-              
+
+               <ToastContainer position="top-center" autoClose={1500} />
                </div>
              </div>
           <Footer/>

@@ -67,7 +67,7 @@ export const shirts = [
     return (
         <>
         <div className="p-6 bg-gray-100" >
-          <h1 className="text-center pt-3 border bg-gradient-to-r from-green-800 via-emerald-600 to-lime-500 text-white h-20 text-5xl font-bold font-serif">Branded Shrits</h1>
+          <h1 className="text-center pt-3 border  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white h-20 text-5xl font-bold font-serif">Branded Shrits</h1>
           <div className="grid grid-cols-4 pt-15 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-6">
             {shirts.map((product) => (
               <div key={product.id} className="M border-gray-200 rounded-lg shadow-lg p-2 w-75 ">
@@ -80,7 +80,7 @@ export const shirts = [
                   </p>
                 </div>
                 <div className="flex justify-center gap-10 mt-5">
-                  <Link to={`/men9/${product.id}`}><button className="border rounded-2xl h-10 w-60 text-white bg-gradient-to-r from-green-800 via-emerald-600 to-lime-500 hover:bg-blue-500 font-semibold">
+                  <Link to={`/men9/${product.id}`}><button className="border rounded-2xl h-10 w-60  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white hover:bg-blue-500 font-semibold">
                     BUY
                   </button></Link>
                 </div>

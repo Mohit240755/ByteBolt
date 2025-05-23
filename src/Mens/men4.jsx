@@ -68,7 +68,7 @@ const Mens4 = () => {
     return (
         <>
         <div className="p-6 bg-gray-100" >
-        <h1 className="text-center pt-3 border bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white h-20 text-5xl font-bold font-serif">
+        <h1 className="text-center pt-3 border  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white h-20 text-5xl font-bold font-serif">
   Tommy and Hilfiger
 </h1>
           <p className="p-6 font-sans text-[25px]">(Showing 1 – 40 products of 29,732 products)</p>
@@ -85,7 +85,7 @@ const Mens4 = () => {
                   </p>
                 </div>
                 <div className="flex justify-center gap-10 mt-5">
-                  <Link to={`/men4/${product.id}`}><button className="border rounded-2xl h-10 w-60 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 hover:brightness-90 text-white font-semibold">
+                  <Link to={`/men4/${product.id}`}><button className="border rounded-2xl h-10 w-60  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white font-semibold">
   BUY
 </button></Link>
                 </div>

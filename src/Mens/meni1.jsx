@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { productss } from "./men2";
 import Footer from "../Footer/footer";
 import { useDispatch } from "react-redux";
+import { increment } from "../redux/slide";
+import { toast,ToastContainer } from "react-toastify";
 
 const Menii = () => {
 
@@ -16,6 +18,21 @@ const Menii = () => {
   const product = productss.find(p => p.id === Number(id));
 
   console.log("product", product);
+
+  const handleClick = () => {
+          dispatch(increment({
+            id: product.id,
+            name: product.name,
+            brand: product.brand,
+            price: product.price,
+            image: product.image,
+            quantity: Number(quantity),
+          }));
+          toast.success("Added to cart successfully!");
+        };
+      
+
+
   return (
     <>
       <div className="w-300 shadow-lg rounded-lg bg-white  overflow-hidden p-2 ml-40 mt-10  transition-shadow duration-300">
@@ -71,7 +88,7 @@ const Menii = () => {
                   <button className="flex items-center gap-3 border mt-5 rounded-2xl px-16 h-10 w-50 bg-emerald-200 hover:bg-emerald-500 transition-all text-sm">
                     Buy Now
                   </button>
-                  <button className="flex items-center gap-3 border mt-5 rounded-2xl px-10 h-10 w-50 bg-emerald-200 hover:bg-emerald-500 transition-all text-sm">
+                  <button onClick={handleClick} className="flex items-center gap-3 border mt-5 rounded-2xl px-10 h-10 w-50 bg-emerald-200 hover:bg-emerald-500 transition-all text-sm">
                     <FaShoppingBag /> Add to Bag
                   </button>
                 </div>
@@ -81,6 +98,7 @@ const Menii = () => {
 
 
         </div>
+        <ToastContainer position="top-center" autoClose={1500}/>
       </div>
       <Footer />
     </>

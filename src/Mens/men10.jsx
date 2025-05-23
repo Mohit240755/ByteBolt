@@ -1,34 +1,34 @@
 import Footer from "../Footer/footer";
 import { Link } from "react-router-dom";
 
-import C1 from "../image/C1.webp"
-import C2 from "../image/C2.webp"
-import C3 from "../image/C3.webp"
-import C4 from "../image/C4.webp"
-import C5 from "../image/C5.webp"
-import C6 from "../image/C6.webp"
-import C7 from "../image/C7.webp"
-import C8 from "../image/C8.webp"
-import C9 from "../image/C9.webp"
-import C10 from "../image/C10.webp"
-import C11 from "../image/C11.webp"
-import C12 from "../image/C12.webp"
-import C13 from "../image/C13.webp"
-import C14 from "../image/C14.webp"
-import C15 from "../image/C15.webp"
-import C16 from "../image/C16.webp"
-import C17 from "../image/C17.webp"
-import C18 from "../image/C18.webp"
-import C19 from "../image/C19.webp"
-import C20 from "../image/C20.webp"
-import C21 from "../image/C21.webp"
-import C22 from "../image/C22.webp"
-import C23 from "../image/C23.webp"
-import C24 from "../image/C24.webp"
-import C25 from "../image/C25.webp"
-import C26 from "../image/C26.webp"
-import C27 from "../image/C27.webp"
-import C28 from "../image/C28.webp"
+import J1 from "../image/J1.webp"
+import J2 from "../image/J2.webp"
+import J3 from "../image/J3.webp"
+import J4 from "../image/J4.webp"
+import J5 from "../image/J5.webp"
+import J6 from "../image/J6.webp"
+import J7 from "../image/J7.webp"
+import J8 from "../image/J8.webp"
+import J9 from "../image/J9.webp"
+import J10 from "../image/J10.webp"
+import J11 from "../image/J11.webp"
+import J12 from "../image/J12.webp"
+import J13 from "../image/J13.webp"
+import J14 from "../image/J14.webp"
+import J15 from "../image/J15.webp"
+import J16 from "../image/J16.webp"
+import J17 from "../image/J17.webp"
+import J18 from "../image/J18.webp"
+import J19 from "../image/J19.webp"
+import J20 from "../image/J20.webp"
+import J21 from "../image/J21.webp"
+import J22 from "../image/J22.webp"
+import J23 from "../image/J23.webp"
+import J24 from "../image/J24.webp"
+import J25 from "../image/J25.webp"
+import J26 from "../image/J26.webp"
+import J27 from "../image/J27.webp"
+import J28 from "../image/J28.webp"
 
 export const mensJeans = [
   { id: 1, brand: "Levi's", name: "Slim Fit Stretch Jeans", price: 1699, originalPrice: 3499, discount: 52, image: J1, rating: "4.5 ⭐⭐⭐⭐⭐", rate: 4.5 },
@@ -63,39 +63,39 @@ export const mensJeans = [
 
 
 
-  
-  const Mens8a = () => {
-    return (
-        <>
-        <div className="p-6 bg-gray-100" >
-          <h1 className="text-center pt-3 border bg-gradient-to-r from-rose-300 via-amber-200 to-pink-400 text-white h-20 text-5xl font-bold font-serif">Branded T-Shirts</h1>
-          <div className="grid grid-cols-4 pt-15 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-6">
-            {mensTshirts.map((product) => (
-              <div key={product.id} className="M border-gray-200 rounded-lg shadow-lg p-2 w-75 ">
-                <Link to={`/men8a/${product.id}`}><img className=" object-contain w-70 h-70 rounded-2xl" src={product.image} alt={product.name} /></Link>
-                <div className="main"> 
-                  <h1 className="font-bold font-mono text-lg">{product.brand}</h1>
-                  <p>{product.name.slice(0,20)}...</p>
-                  <p className="border-white w-16 pl-2 rounded-lg m-1 bg-green-500">{product.rate}⭐</p>
-                  <p className="font-semibold">
-                    ₹{product.price} <span className="line-through"> ₹{product.originalPrice}</span> <span className="text-green-800">{product.discount}% OFF</span>
-                  </p>
-                </div>
-                <div className="flex justify-center gap-10 mt-5">
-                  <Link to={`/men8a/${product.id}`}><button className="border rounded-2xl h-10 w-60 text-white bg-gradient-to-r from-rose-300 via-amber-200 to-pink-400 hover:bg-blue-500 font-semibold">
-                    BUY
-                  </button></Link> 
-                </div>
+
+const Mens10 = () => {
+  return (
+    <>
+      <div className="p-6 bg-gray-100" >
+        <h1 className="text-center pt-3 border  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white h-20 text-5xl font-bold font-serif">Branded Jeans</h1>
+        <div className="grid grid-cols-4 pt-15 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-6">
+          {mensJeans.map((product) => (
+            <div key={product.id} className="M border-gray-200 rounded-lg shadow-lg p-2 w-75 ">
+              <Link to={`/men10/${product.id}`}><img className=" object-contain w-70 h-70 rounded-2xl" src={product.image} alt={product.name} /></Link>
+              <div className="main">
+                <h1 className="font-bold font-mono text-lg">{product.brand}</h1>
+                <p>{product.name.slice(0, 20)}...</p>
+                <p className="border-white w-16 pl-2 rounded-lg m-1 bg-green-500">{product.rate}⭐</p>
+                <p className="font-semibold">
+                  ₹{product.price} <span className="line-through"> ₹{product.originalPrice}</span> <span className="text-green-800">{product.discount}% OFF</span>
+                </p>
               </div>
-            ))}
-          </div>
-        </div> 
-        <Footer/>
-        </>
-      );
+              <div className="flex justify-center gap-10 mt-5">
+                <Link to={`/men10/${product.id}`}><button className="border rounded-2xl h-10 w-60  bg-gradient-to-r from-slate-700 via-gray-600 to-zinc-500 text-white hover:bg-blue-500 font-semibold">
+                  BUY
+                </button></Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }
 
-export default Mens8a;
+export default Mens10;
 
 
 
